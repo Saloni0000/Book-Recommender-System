@@ -68,7 +68,7 @@ if all(col in popular_df.columns for col in required_columns):
                 st.image(popular_df['Image-URL-M'].iloc[i], width=100)
         with col2:
             st.write(f"**{popular_df['Book-Title'].iloc[i]}** by {popular_df['Book-Author'].iloc[i]}")
-            st.write(f"⭐ {popular_df['avg_rating'].iloc[i]} ({popular_df['num_ratings'].iloc[i]} votes)")
+            st.write(f"⭐ {round(popular_df['avg_rating'].iloc[i], 1)} ({popular_df['num_ratings'].iloc[i]} votes)")
             st.markdown("---")
 else:
     st.error("⚠️ Required columns are missing from `popular_df`. Please check the dataset.")
