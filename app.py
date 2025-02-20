@@ -45,7 +45,7 @@ def load_data():
 books, popular_df, pt, similarity_scores = load_data()
 
 # Debugging: Show columns of popular_df
-st.write("📌 Available columns in `popular_df`:", list(popular_df.columns))
+#st.write("📌 Available columns in `popular_df`:", list(popular_df.columns))
 
 # ------------------------------
 # 🔹 Streamlit UI
