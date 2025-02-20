@@ -30,7 +30,7 @@ books_file = merge_files()
 
 # Load the merged pickle file
 with open(books_file, "rb") as f:
-    books = pickle.load(f)
+    books = pd.read_pickle(f)
 
 # Load other required pickle files
 popular_df = pd.read_pickle(open('popular.pkl', 'rb'))
