@@ -7,7 +7,7 @@ import pickle
 
 popular_df = pd.read_pickle(open('popular.pkl','rb'))
 pt = pd.read_pickle(open('pt.pkl','rb'))
-books = pd.read_pickle(open('books.pkl','rb'))
+books = pd.read_pickle(open('Downloads/RECOMMEDERSYSTEM/books.pkl','rb'))
 similarity_scores = pd.read_pickle(open('similarity_scores.pkl','rb'))
 
 app = Flask(__name__)
